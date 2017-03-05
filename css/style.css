@@ -1,0 +1,692 @@
+@font-face{
+    font-family: ProximaNova;
+    src: url('../fonts/proxima_nova_light.otf');
+    font-style: light;
+}
+
+@font-face{
+    font-family: ProximaNovaBoldItalic;
+    src: url('../fonts/proxima_nova_bold_italic.otf');
+    font-style: italic;
+}
+
+@font-face{
+    font-family: ProximaNovaBold;
+    src: url('../fonts/proxima_nova_bold.otf');
+    font-style: italic;
+}
+
+@font-face{
+    font-family: ProximaNovaRegular;
+    src: url('../fonts/proxima_nova_regular.otf');
+    
+}
+
+@font-face{
+    font-family: ProximaNovaRegularItalic;
+    src: url('../fonts/proxima_nova_regular_italic.otf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlackJack'; /* Имя шрифта */
+    src: url('../fonts/blackjack.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face{
+    font-family: ProximaNovaSemiboldItalic;
+    src: url('../fonts/proxima_nova_semibold_italic.otf');
+}
+
+/*.container{
+    background-color: #58aed2;
+    overflow: hidden;
+}*/
+
+.header{
+    background-color: #58aed2;
+    overflow: hidden;
+}
+
+.main{
+    background-color: #58aed2;
+}
+
+.hamburger{
+    float: right;
+    margin-top: 30px;
+}
+
+.row-header-text{
+    position: relative;
+    float: right;
+    text-align: right;
+    z-index: 2;
+}
+
+.row-header-text h1{
+    font-family: BlackJack;
+    font-size: 70px;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-header-text h1{
+        margin-bottom: 15px;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .row-header-text h1{
+    font-size: 56px;
+    margin-top: 37px;
+    margin-bottom: 20px;
+    }
+}
+
+.row-header-text p{
+    font-family: ProximaNova;
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-header-text p{
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .row-header-text p{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.word{
+    font-family: ProximaNovaBoldItalic;
+}
+
+.button{
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 2px solid white;
+    float: right;
+    margin-bottom: 140px;
+}
+
+
+@media screen and (min-width: 320px){
+      .button{
+        margin-bottom: 10%;
+    }
+}
+
+.button a{
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+}
+
+.button:hover{
+    background-color: #59E5FE;
+    transition-duration: .8s;
+}
+
+.button:active{
+    background-color: #00BFFF;
+    transition-duration: .4s;
+}
+
+.fa-cloud-download{
+    padding-left: 10px;
+}
+
+.crop{
+    position: relative;
+}
+
+.crop .iphone{
+    position: absolute;
+    bottom: -200px;
+    z-index: 1;
+    left: 70px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .iphone{
+        display: none;
+    }
+}
+
+/*-------HAMBURGER------------*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #e57f85;
+    overflow-y: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #B5B5B5;
+    transition-duration: .6s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 45px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+/*-------END HAMBURGER---------------*/
+
+
+/*------------BLOCK 2------------------*/
+
+.about{
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.about-content{
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+
+.button-hello{
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #14af8f;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.button-hello a{
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+    color: #14af8f;
+    text-transform: uppercase;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+}
+
+.button-hello:hover{
+    background-color: #6ED7C2;
+    transition-duration: .8s;
+}
+
+.button-hello:active{
+    background-color: #07725D;
+    transition-duration: .2s;
+}
+
+.fa-envelope-o {
+    padding-left: 10px;
+}
+
+blockquote{
+    font-size: 17px;
+    border-left: 5px solid #4eacdd;
+    font-family: ProximaNovaRegularItalic;
+    color: #7e7e7e;
+    margin-top: 50px;
+   
+}
+
+.row-about-text h1{
+    font-family: ProximaNova;
+    font-size: 40px;
+    color: #545454;
+    margin-top: 115px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .row-about-text h1{
+    margin-top: 50px;
+}
+}
+.row-about-text p{
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
+    margin-top: 40px;
+   
+}
+
+.crop-ipad{
+    position: relative;
+}
+
+
+.crop-ipad .ipad{
+    position: absolute;
+    right: -15px;
+    bottom: -695px;
+}
+
+/*----------------BLOCK3----------------*/
+
+.block3{
+    overflow: hidden;
+}
+
+.portfolio{
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.button-drible{
+    display: block;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #ef76a5;
+    margin-bottom: 250px;
+    margin-top: 50px;
+}
+
+.button-drible:hover{
+    background-color: #F7B2CD;
+    transition-duration: .8s;
+}
+
+.button-drible:active{
+    background-color: #B36F8A;
+    transition-duration: .4s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .button-drible{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
+.button-drible a{
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+    color: #ef76a5;
+    text-transform: uppercase;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+}
+
+.fa-dribbble{
+    padding-left: 10px;
+}
+
+.text-dev{
+    margin-top: 115px;
+    float: right;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .text-dev{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.devices-text h1{
+    font-family: ProximaNova;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .devices-text h1{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+
+
+.devices-text p.span{
+    font-family: ProximaNovaSemiboldItalic;
+    font-size: 16px;
+    color: #474e5d;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .devices-text p.span{
+        margin-bottom: 25px;
+    }
+}
+
+.devices-text p{
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
+}
+
+.crop-devices{
+    position: relative;
+}
+
+.devices{
+    position: absolute;
+    left: -10px;
+    bottom: -770px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .devices{
+    position: absolute;
+    left: -165px;
+    bottom: -860px;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .devices{
+        display: none;
+    }
+}
+
+
+/*----------------BLOCK4--------------*/
+
+.block4{
+    background-color: #13c3ae;
+}
+.donate{
+    background-color: #13c3ae;
+}
+
+.button-beer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 220px;
+    border: 2px solid #fff;
+    margin-bottom: 10%;
+}
+
+ 
+.button-beer a{
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+}
+
+.fa-beer{
+    padding-left: 10px;
+}
+
+.button-beer:hover{
+    background-color: #489E9A;
+    transition-duration: .8s;
+}
+
+.button-beer:active{
+    background-color: #013C3A;
+    transition-duration: .4s;
+}
+
+.donate-text{
+    font-family: ProximaNovaRegular;
+    font-size: 40px;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+
+/*--------------BLOCK5---------------------*/
+
+.contact{
+    background-color: #f4f4f4;
+}
+
+.block5{
+    background-color: #f4f4f4;
+}
+
+.icon-dribbble-circled{
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 100;
+    color: #545454;
+}
+
+.icon-dribbble-circled:hover{
+    transform: scale(1.4);
+    transition-duration: .8s;
+}
+
+.icon-facebook-circled{
+    display: inline-block;
+    font-size: 50px;
+    color: #545454;
+}
+
+.icon-facebook-circled:hover{
+    transform: scale(1.4);
+    transition-duration: .8s;
+}
+
+.icon-twitter-circled{
+    display: inline-block;
+    font-size: 50px;
+    color: #545454;
+}
+
+.icon-twitter-circled:hover{
+    transform: scale(1.4);
+    transition-duration: .8s;
+}
+
+.icon-paper-plane-alt2{
+    display: inline-block;
+    font-size: 50px;
+    color: #545454;
+}
+
+.icon-paper-plane-alt2:hover{
+    transform: scale(1.4);
+    transition-duration: .8s;
+}
+
+.social{
+    margin-top: 30%;
+    margin-bottom: 10%;
+    font-weight: 100;
+}
+
+.form-inline{
+    margin-bottom: 30%;
+}
+
+label{
+    font-family: ProximaNovaSemiboldItalic;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+
+.email__input {
+    display: inline-block;
+    position: relative;
+    font-family: ProximaNovaSemiboldItalic;
+    font-size: 26px;
+   
+}
+.email__input  input {
+    border: transparent;
+    padding-right: 40px;
+  }
+.email__input i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -8px;
+
+    font-size: 18px;
+    color: #6ec5ea;
+  }
+  .email__input:before {
+    content: '';
+    height: 16px;
+    width: 1px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -8px;
+    background-color: #e9e9e9;
+  }
+
+.fa-envelope{
+    display: inline-block;
+}
+
+.fa-envelope:hover{
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+
+
+/*---------------------BLOCK6-----------------*/
+
+.footer{
+    background-color: #fff;
+}
+
+.block6{
+    background-color: #fff;
+}
+
+.row-final{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.row-final p{
+    font-family: ProximaNovaRegularItalic;
+    font-size: 12px;
+}
+
+.colortext{
+    font-family: ProximaNovaRegular;
+    color: #6dc5ea;
+    font-size: 12px;
+}
+
+.year{
+    font-family: ProximaNovaRegular;
+    font-size: 12px;
+}
+
+/*----------------BACK TO TOP--------------*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  border-radius: 20%;
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #f4f4f4 url("../images/to-top-icon.png") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #f4f4f4;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
